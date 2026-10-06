@@ -1,0 +1,72 @@
+/*
+ * Design tokens.
+ *
+ * One home for the visual system's primitives. The first block is the palette
+ * documented in DESIGN.md; the blocks after it are the tonal ramps this
+ * interface actually needs — an engraved parchment surface cannot be built
+ * from eight flat colours, and a ramp declared once is better than the same
+ * near-value written out forty times.
+ *
+ * The ground is the sea Homer calls oinops pontos, the wine-faced water: not
+ * blue and not purple, a darkness with red in it. Everything drawn on top of
+ * it is bronze, because bronze is the poem's own metal — the threshold of
+ * Alcinous, the spear, the axe-heads, the cauldron given as a guest-gift.
+ *
+ * Loaded before styles.css so every rule can reference these.
+ */
+
+:root {
+  /* --- documented palette (DESIGN.md) ---------------------------------- */
+  --sea-night: #0e1c2e;
+  --sea-deep: #06111e;
+  --sea-field: #16405e;
+  --terracotta: #c4603f;
+  --bronze: #dfa63f;
+  --aegean: #58a39c;
+  --linen: #f2ead9;
+  --linen-bright: #fffbf2;
+  --ink: #16191d;
+  --fog: #b6c8d4;
+  --fog-dim: #8ba4b3;
+  --line-dark: rgba(242, 234, 217, .18);
+  --line-ink: rgba(22, 25, 29, .22);
+
+  /* --- typography ------------------------------------------------------- */
+  --display: "Bodoni Moda", Didot, Georgia, serif;
+  --body: Manrope, "Avenir Next", sans-serif;
+  --narrow: "Archivo Narrow", "Arial Narrow", sans-serif;
+
+  /* --- motion and metrics ----------------------------------------------- */
+  --ease-turn: cubic-bezier(.16, 1, .3, 1);
+  --header-h: 72px;
+
+  /* --- engraved bronze: the linework ramp on the dark plate -------------- */
+  --engrave: rgba(219, 176, 104, .5);
+  --engrave-soft: rgba(219, 176, 104, .26);
+  --engrave-faint: rgba(219, 176, 104, .13);
+  --engrave-line: rgba(231, 196, 132, .58);
+  --engrave-star: rgba(255, 246, 224, .95);
+
+  /* --- parchment: the reading surface and its ink ramp ------------------- */
+  --parchment: #f0e4c9;
+  --parchment-bright: #f4e9d2;
+  --parchment-rule: rgba(94, 66, 30, .23);
+  --parchment-rule-strong: rgba(94, 66, 30, .38);
+  --parchment-wash: rgba(118, 78, 24, .06);
+  --parchment-wash-edge: rgba(140, 94, 26, .38);
+
+  --parchment-ink: #211d17;      /* body copy on parchment            */
+  --parchment-ink-2: #2c241a;    /* secondary body copy               */
+  --parchment-ink-3: #443724;    /* tertiary notes                    */
+  --parchment-ink-4: #6a5636;    /* captions and disclaimers          */
+  --parchment-ink-dark: #2a1f0c; /* text on a bronze fill             */
+
+  --parchment-gold-1: #855812;   /* small-cap labels                  */
+  --parchment-gold-2: #764d12;   /* eyebrow rules                     */
+  --parchment-gold-3: #69410d;   /* links and inline emphasis         */
+  --parchment-gold-4: #57380c;   /* engraved strokes on bronze        */
+  --parchment-gold-edge: #a5711c;/* active border on parchment        */
+
+  /* --- the portal, and the linen behind a lifted sheet ------------------- */
+  --portal-linen: #f3ead9;
+}
