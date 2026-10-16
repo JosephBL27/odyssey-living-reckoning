@@ -1,5 +1,7 @@
 # Odyssey: A Living Reckoning
 
+**Case study:** [josephbl27.github.io/#odyssey](https://josephbl27.github.io/#odyssey), part of [my portfolio](https://josephbl27.github.io/).
+
 **Live: [{{PORTFOLIO_URL}}/demos/odyssey/]({{PORTFOLIO_URL}}/demos/odyssey/)** (best on a laptop)
 
 A reading instrument for Homer's *Odyssey*, built to sit beside the print text.
